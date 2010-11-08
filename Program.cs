@@ -35,6 +35,8 @@ namespace INVedit
 					args = new string[0];
 				}
 			}
+			string appPath = System.AppDomain.CurrentDomain.BaseDirectory;
+			System.IO.Directory.SetCurrentDirectory(appPath);
 			
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
